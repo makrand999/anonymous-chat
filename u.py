@@ -18,7 +18,7 @@ class GistMessageBoard:
     def __init__(self):
         self.gist_id = "f97354d3238ee47e8beb277eceb31cf5"
         self.filename = "gistfile1.txt"
-        self.token = "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"
+        self.token = "_B8Pb82bXl8vjb31YvhotUEzi6mYkLV0rV6S6"
         self.headers = {
             "Authorization": f"token {self.token}",
             "Accept": "application/vnd.github.v3+json"
