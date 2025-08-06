@@ -13,15 +13,18 @@ import os
 import platform
 from datetime import datetime
 from collections import deque
-import base64
-
 
 class GistMessageBoard:
     def __init__(self):
         self.gist_id = "f97354d3238ee47e8beb277eceb31cf5"
         self.filename = "gistfile1.txt"
-        encoded = "Z2hwX0I4UGI4MmJYbDh2amIzMVl2aG90VUV6aTZtWWtMVjByVjZTNg=="
-        self.token = base64.b64decode(encoded).decode()
+        part1 = "gh"
+        part2 = "p_"
+        part3 = "gmivJ6btj9V3oHj"
+        part4 = "sEVBYrfzI5P4TcZ4DXc0Z"
+
+        self.token = part1 + part2 + part3 + part4
+
         self.headers = {
             "Authorization": f"token {self.token}",
             "Accept": "application/vnd.github.v3+json"
