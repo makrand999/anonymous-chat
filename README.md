@@ -19,6 +19,7 @@ _❗Avoid the outdated Play Store version._
 pkg update
 pkg install git python
 pip install requests
+Git clone https://github.com/makrand999/anonymous-chat.git
 ```
 
 ---
